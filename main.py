@@ -8,7 +8,9 @@ screen.title("Pong Game")
 
 paddle = Paddle()
 
-
+screen.listen()
+screen.onkey(paddle.up, "Up")
+screen.onkey(paddle.down, "Down")
 
 
 screen.exitonclick()
